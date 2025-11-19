@@ -15,6 +15,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         findViewById<View>(R.id.Cover).setOnClickListener {
             findViewById<View>(R.id.Cover).visibility = View.GONE
+            findViewById<View>(R.id.button2).visibility = View.VISIBLE
+        }
+        findViewById<View>(R.id.button2).setOnClickListener {
+            findViewById<View>(R.id.button2).visibility = View.GONE
             findViewById<View>(R.id.Question).visibility = View.VISIBLE
         }
 
